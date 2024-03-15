@@ -1,33 +1,20 @@
 /*
-脚本功能：网易云音乐黑胶vip++++
-软件版本：9.0.30
-下载地址：苹果商店下载
-脚本作者：
-更新时间：2024年3月12+
-电报频道：https://t.me/GieGie777
-问题反馈：
-使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
-*******************************
+脚本功能：网易云解锁VIP
+免责声明：仅供参考 请勿传播 脚本具有时效性
+脚本作者：ios-🐔神
+更新时间：2023.10.21
+
+Tg频道:https://t.me/iosapp520
+
+VIP音乐试听权限+
+不会变身会员,可以直接听会员歌曲！无法调高音质！
+
 [rewrite_local]
-# > 网易云音乐黑胶vip
-# 播放器会员皮肤
-^https:\/\/interface3?\.music\.163\.com\/eapi\/playermode\/ url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-# 搜索结果会员歌曲
-^https:\/\/interface3?\.music\.163\.com\/eapi\/search\/complex\/(page|rec\/song\/get) url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-# 播放器会员歌曲
-^https:\/\/interface3?\.music\.163\.com\/eapi\/v3\/song\/detail url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-^https:\/\/interface3?\.music\.163\.com\/eapi\/song\/(chorus|enhance\/|play\/|type\/detail\/get) url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-^https:\/\/interface3?\.music\.163\.com\/eapi\/(v1\/artist\/top\/song|v3\/discovery\/recommend\/songs) url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-# 侧边栏会员等级
-^https:\/\/interface3?\.music\.163\.com\/eapi\/vipnewcenter\/app\/resource\/newaccountpage url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-# 首页歌单会员歌曲
-^https?:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/|v6\/)?playlist\/ url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
-# 会员认证
-^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
+# > 网易云解锁VIP
+^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js
 
 [mitm] 
-hostname = *music.163.com,
-
+hostname = *.music.163.com
 */
 
 
